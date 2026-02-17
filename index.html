@@ -1,152 +1,131 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Springfield Capital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="login" id="login">
-  <div class="login-box">
-    <h2>Investor Access</h2>
-    <p>This site contains confidential information.</p>
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="check()">Enter</button>
-  </div>
-</div>
-
-<div class="container" id="content" style="display:none">
-
-  <h1>Springfield Capital</h1>
-  <p class="subtitle">
-    An operator-led investment platform focused on asymmetric outcomes.
-  </p>
-
-  <hr>
-
-  <h2>What We Do</h2>
-  <p>
-    Springfield Capital focuses on investment situations where execution quality,
-    capital structure insight, and timing materially change outcomes.
-    We operate selectively and remain closely involved post-investment.
-  </p>
-
-  <h2>Investment Focus</h2>
-  <p>
-    Our target opportunities typically exist in large, fragmented markets
-    where inefficiency, misalignment, or under-optimization creates
-    attractive entry points.
-  </p>
-
-  <h2>How We Think</h2>
-  <p>
-    We prioritize downside protection first.
-    Upside is pursued through operational leverage, disciplined capital deployment,
-    and long-term alignment with stakeholders.
-  </p>
-
-  <h2>Team</h2>
-  <p>
-    The platform is led by operators with experience across strategy,
-    execution, and complex operating environments.
-  </p>
-
-  <h2>Next Steps</h2>
-  <p>
-    We engage with a small number of aligned partners.
-    Further information is shared through direct conversation.
-  </p>
-
-  <footer>
-    © Springfield Capital
-  </footer>
-
-</div>
-
-<script>
-  function check() {
-    if (document.getElementById("password").value === "SpringCap2026") {
-      document.getElementById("login").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    } else {
-      alert("Incorrect password");
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #111;
     }
-  }
-</script>
 
-</body>      color: #666;
-    }
     .login {
       position: fixed;
       inset: 0;
-      background: white;
+      background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 10;
     }
+
     .login-box {
       width: 100%;
-      max-width: 320px;
-      padding: 24px;
+      max-width: 360px;
+      padding: 32px;
       border: 1px solid #ddd;
+      box-sizing: border-box;
     }
+
     input {
       width: 100%;
-      padding: 10px;
-      margin-top: 10px;
+      padding: 12px;
       font-size: 16px;
+      margin-top: 12px;
     }
+
     button {
       width: 100%;
-      padding: 10px;
-      margin-top: 15px;
+      padding: 12px;
+      margin-top: 16px;
       font-size: 16px;
+      background: #111;
+      color: #fff;
+      border: none;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 80px auto;
+      padding: 48px;
+      background: #ffffff;
+      display: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
 
-<div class="login" id="login">
-  <div class="login-box">
-    <h2>Investor Access</h2>
-    <p>Enter password to continue</p>
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="check()">Enter</button>
+  <div class="login" id="login">
+    <div class="login-box">
+      <h2>Investor Access</h2>
+      <p>This site contains confidential information.</p>
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="check()">Enter</button>
+    </div>
   </div>
-</div>
 
-<div class="container" id="content" style="display:none">
-  <h1>Springfield Capital</h1>
-  <p>Private investor information site.</p>
+  <div class="container" id="content">
+    <h1>Springfield Capital</h1>
+    <p><strong>Private investor information site.</strong></p>
 
-  <h2>Overview</h2>
-  <p>Springfield Capital is an investment platform focused on disciplined execution, asymmetric opportunities, and operator-led value creation.</p>
+    <h2>Overview</h2>
+    <p>
+      Springfield Capital is an operator-led investment platform focused on
+      disciplined execution and asymmetric opportunities.
+    </p>
 
-  <h2>Investment Thesis</h2>
-  <p>We focus on situations where operational leverage, market structure, and timing create outsized return potential.</p>
+    <h2>Investment Thesis</h2>
+    <p>
+      We invest where operational leverage and timing materially alter outcomes.
+    </p>
 
-  <h2>Market Opportunity</h2>
-  <p>Our target markets exhibit fragmentation, inefficiency, and clear paths to consolidation or performance uplift.</p>
+    <h2>Market Opportunity</h2>
+    <p>
+      Fragmented markets with clear paths to consolidation and performance uplift.
+    </p>
 
-  <h2>Strategy</h2>
-  <p>Hands-on involvement, downside protection, and capital efficiency guide all decisions.</p>
+    <h2>Strategy</h2>
+    <p>
+      Hands-on ownership, downside protection, capital efficiency.
+    </p>
 
-  <h2>Team</h2>
-  <p>Led by experienced operators with deep execution background.</p>
+    <h2>Team</h2>
+    <p>
+      Led by experienced operators with deep execution backgrounds.
+    </p>
 
-  <h2>Next Steps</h2>
-  <p>Confidential discussions available upon request.</p>
+    <h2>Next Steps</h2>
+    <p>
+      Confidential discussions available upon request.
+    </p>
 
-  <footer>
-    © Springfield Capital
-  </footer>
-</div>
+    <footer>
+      © Springfield Capital
+    </footer>
+  </div>
 
-<script>
-  function check() {
-    if (document.getElementById("password").value === "SpringCap2026") {
-      document.getElementById("login").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    } else {
-      alert("Incorrect password");
+  <script>
+    function check() {
+      var pw = document.getElementById("password").value;
+      if (pw === "SC-Spring-2026") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("Incorrect password");
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
 </html>
